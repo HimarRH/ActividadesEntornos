@@ -1,9 +1,27 @@
+/**
+ * El objetivo de la <b>clase jugador<b> se encarga de los dorsales de cada jugador y controlar las tarjetas amarillas y rojas.
+ * 
+ * @author himar
+ * @version 1.0
+ */
+
 package modelo.javabeans;
 
 public class Jugador {
-
+	// ATRIBUTO DE CLASE
+	/**
+	 * Valor númerico para el dorsal.
+	 */
 	private int dorsal;
+
+	/**
+	 * Valor numérico de la cantidad de Tarjetas Amarillas.
+	 */
 	private int numeroTarjetasAmarillas;
+
+	/**
+	 * Valor numérico de la cantidad de Tarjetas Rojas
+	 */
 	private int numeroTarjetasRojas;
 
 	public Jugador() {
@@ -47,6 +65,14 @@ public class Jugador {
 				+ ", numeroTarjetasRojas=" + numeroTarjetasRojas + "]";
 	}
 
+	/**
+	 * El método recibe un número entero en forma de dorsal y lo califica como
+	 * dorsal. Es decir si el número recibido está entre 1 y 30, ese dorsal será el
+	 * número correcto de dorsal. Pero si se situa fuera de 1 y de 30, se le
+	 * asignara como dorsal el número pasado menos 1.
+	 * 
+	 * @param dorsal, el dorsal que queremos establecer.
+	 */
 	public void ponerDorsal(int dorsal) {
 
 		if (dorsal >= 1 && dorsal <= 30) {
@@ -60,6 +86,17 @@ public class Jugador {
 		}
 
 	}
+
+	/**
+	 * Esté método se encarga de informar sobre si procede expulsar o no al jugador
+	 * en función de las tarjetas recibidas. De tal forma que si: Tiene 1 tarjeta
+	 * amarilla: No es expulsado. Tiene 2 tarjetas amarillas: Es expulsado. Tiene 1
+	 * tarjeta roja: Es expulsado.
+	 * 
+	 * @param expulsado. Es un valor booleano.
+	 * @return true si cumple con lo dispuesto en el if, es decir tiene 2 tarjetas
+	 *         amarillas o 1 tarjeta roja.
+	 */
 
 	public boolean estaExpulsado() {
 
