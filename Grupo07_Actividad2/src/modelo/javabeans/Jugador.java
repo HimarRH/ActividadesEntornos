@@ -15,12 +15,12 @@ public class Jugador {
 	private int dorsal;
 
 	/**
-	 * Valor numérico de la cantidad de Tarjetas Amarillas.
+	 * Valor numérico de la cantidad de Tarjetas Amarillas. Si tiene dos será expulsado
 	 */
 	private int numeroTarjetasAmarillas;
 
 	/**
-	 * Valor numérico de la cantidad de Tarjetas Rojas
+	 * Valor numérico de la cantidad de Tarjetas Rojas. Si tiene una el jugador será expulsado
 	 */
 	private int numeroTarjetasRojas;
 
@@ -69,7 +69,7 @@ public class Jugador {
 	 * El método recibe un número entero en forma de dorsal y lo califica como
 	 * dorsal. Es decir si el número recibido está entre 1 y 30, ese dorsal será el
 	 * número correcto de dorsal. Pero si se situa fuera de 1 y de 30, se le
-	 * asignara como dorsal el número pasado menos 1.
+	 * asignara como dorsal el número menos 1.
 	 * 
 	 * @param dorsal, el dorsal que queremos establecer.
 	 */

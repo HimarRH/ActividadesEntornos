@@ -10,7 +10,7 @@ package modelo.javabeans;
 public class Soldado {
 /*--ATRIBUTOS DE CLASE--*/
 	/**
-	 * estaMuerto es un atributo de clase boolean que nos indica como se encuentra el soldado.
+	 * estaMuerto es un atributo de clase boolean que nos indica como se encuentra el soldado. Será tru si está muerto y false si está vivo.
 	 */
 	private boolean estaMuerto;
 /**
