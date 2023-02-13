@@ -67,8 +67,8 @@ public class Soldado {
 	}
 	
 	/** 
-	 * El método disparar nos dice que el soldado está muerto. Para ello se crea un objeto soldado y con el atributo
-	 * esta muerto.
+	 * El método disparar hace que un soldado dispare a otro soldado, restando una bala al soldado que 
+	 * dispara y matando al soldado que es disparado.
 	 * @param sol
 	 */
 
