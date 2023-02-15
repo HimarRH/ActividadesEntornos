@@ -38,10 +38,12 @@ class SoldadoTest {
 	@Test
 	public void cuantasBalasQuedan() {
 		System.out.println("Test 4 Hecho");
-		int resultadoEsperado = 4;
 		sold1.disparar(sold2);
+		int resultadoObtenido = sold1.getNumeroBalas();
+		int resultadoEsperado = 4;
 		
-		assertEquals(resultadoEsperado, sold1.getNumeroBalas());
+		
+		assertEquals(resultadoObtenido, resultadoEsperado);
 		
 		
 	}
